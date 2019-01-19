@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Count</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h1 class="alert alert-danger">Iam counter</h1>
+        
+        {% for k,v in list %}
+        <h3>{{k}}-->{{v}}</h3>
+        
+        <br>
+        {% endfor %}
+        {{counttext}}
+        <h1><a href={% url 'home'%}>Try Again</a></h1>
+    </body>
+</html>
